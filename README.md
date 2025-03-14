@@ -1,6 +1,8 @@
 # 🏗 Scaffold-ETH-Taiko
 
-
+<div align="center">
+<img src=".github/assets/hero_image.png" />
+</div>
 
 <h4 align="center">
   <a href="https://docs.taiko.xyz">Documentation</a>
