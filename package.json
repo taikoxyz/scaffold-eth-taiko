@@ -38,6 +38,7 @@
   },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.10",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.19",
     "husky": "^9.1.6",
@@ -45,5 +46,8 @@
   },
   "engines": {
     "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8"
   }
 }
