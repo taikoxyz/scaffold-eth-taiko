@@ -13,7 +13,7 @@
     "lint": "eslint --config ./.eslintrc.json --ignore-path ./.eslintignore ./*.ts ./deploy/**/*.ts ./scripts/**/*.ts ./test/**/*.ts",
     "lint-staged": "eslint --config ./.eslintrc.json --ignore-path ./.eslintignore",
     "format": "prettier --write ./*.ts ./deploy/**/*.ts ./scripts/**/*.ts ./test/**/*.ts",
-    "test": "REPORT_GAS=true hardhat test --network monadTestnet",
+    "test": "REPORT_GAS=true hardhat test --network taikoTestnet",
     "verify": "hardhat run scripts/verifyContract.ts"
   },
   "devDependencies": {
