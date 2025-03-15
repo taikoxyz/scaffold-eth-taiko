@@ -10,67 +10,42 @@ module.exports = {
         themes: [
             {
                 light: {
-                    primary: "#200052",
-                    "primary-content": "#F9FBFF",
-                    secondary: "#836EF9",
-                    "secondary-content": "#F9FBFF",
-                    accent: "#4969A6",
-                    "accent-content": "#F9FBFF",
-                    neutral: "#F9FBFF",
-                    "neutral-content": "#836EF9",
-                    "base-100": "#836EF9",
-                    "base-200": "#200052",
-                    "base-300": "#200052",
-                    "base-content": "#F9FBFF",
-                    info: "#A0055D",
-                    success: "#34EEB6",
-                    warning: "#FFCF72",
-                    error: "#FF8863",
-
-                    "--rounded-btn": "9999rem",
-
-                    ".tooltip": {
-                        "--tooltip-tail": "6px",
-                    },
-                    ".link": {
-                        textUnderlineOffset: "2px",
-                    },
-                    ".link:hover": {
-                        opacity: "80%",
-                    },
+                    primary: "#E81899",           // Taiko Pink
+                    "primary-content": "#FFFFFF",
+                    secondary: "#5D07C8",         // Purple
+                    "secondary-content": "#FFFFFF",
+                    accent: "#0C101B",            // Deep Gray
+                    "accent-content": "#FFFFFF",
+                    neutral: "#FFFFFF",
+                    "neutral-content": "#0C101B",
+                    "base-100": "#FFFFFF",
+                    "base-200": "#FFD0E8",        // Light Pink
+                    "base-300": "#E81899",        // Taiko Pink
+                    "base-content": "#0C101B",
+                    info: "#5D07C8",              // Purple
+                    success: "#6ECFB0",           // Mint Green
+                    warning: "#FCE2A0",           // Light Yellow
+                    error: "#FC6264",             // Coral
                 },
             },
             {
                 dark: {
-                    primary: "#200052",
-                    "primary-content": "#F9FBFF",
-                    secondary: "#836EF9",
-                    "secondary-content": "#F9FBFF",
-                    accent: "#4969A6",
-                    "accent-content": "#F9FBFF",
-                    neutral: "#F9FBFF",
-                    "neutral-content": "#836EF9",
-                    "base-100": "#836EF9",
-                    "base-200": "#200052",
-                    "base-300": "#200052",
-                    "base-content": "#F9FBFF",
-                    info: "#A0055D",
-                    success: "#34EEB6",
-                    warning: "#FFCF72",
-                    error: "#FF8863",
-
-                    "--rounded-btn": "9999rem",
-
-                    ".tooltip": {
-                        "--tooltip-tail": "6px",
-                        "--tooltip-color": "oklch(var(--p))",
-                    },
-                    ".link": {
-                        textUnderlineOffset: "2px",
-                    },
-                    ".link:hover": {
-                        opacity: "80%",
-                    },
+                    primary: "#E81899",           // Taiko Pink
+                    "primary-content": "#FFFFFF",
+                    secondary: "#5D07C8",         // Purple
+                    "secondary-content": "#FFFFFF",
+                    accent: "#0C101B",            // Deep Gray
+                    "accent-content": "#FFFFFF",
+                    neutral: "#FFFFFF",
+                    "neutral-content": "#0C101B",
+                    "base-100": "#FFFFFF",
+                    "base-200": "#FFD0E8",        // Light Pink
+                    "base-300": "#E81899",        // Taiko Pink
+                    "base-content": "#0C101B",
+                    info: "#5D07C8",              // Purple
+                    success: "#6ECFB0",           // Mint Green
+                    warning: "#FCE2A0",           // Light Yellow
+                    error: "#FC6264",             // Coral
                 },
             },
         ],
@@ -82,6 +57,15 @@ module.exports = {
             },
             animation: {
                 "pulse-fast": "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            colors: {
+                'taiko-pink': '#E81899',
+                'taiko-purple': '#5D07C8',
+                'pink-200': '#FFD0E8', // Override Tailwind's pink-200 to match the footer color
+            },
+            backgroundColor: {
+                'taiko-gradient-start': '#FFD0E8',
+                'taiko-gradient-end': '#E81899',
             },
         },
     },

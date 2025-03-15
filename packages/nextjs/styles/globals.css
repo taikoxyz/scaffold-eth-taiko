@@ -1,0 +1,65 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root,
+[data-theme] {
+  background: oklch(var(--b2));
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.btn {
+  @apply shadow-md;
+}
+
+.btn.btn-ghost {
+  @apply shadow-none;
+}
+
+/* Taiko specific styles */
+.bg-taiko-gradient {
+  background: linear-gradient(to bottom, #FFD0E8 0%, #E81899 100%);
+}
+
+.btn-primary {
+  @apply bg-taiko-purple border-taiko-pink text-white hover:bg-opacity-80;
+}
+
+/* Ensure pink-200 is consistent */
+.bg-pink-200 {
+  background-color: #FFD0E8 !important;
+}
+
+/* Add styling for the footer */
+.menu-horizontal {
+  background-color: transparent;
+}
+
+/* Style for links in footer */
+.text-taiko-pink {
+  color: #E81899 !important;
+}
+
+.hover\:text-pink-700:hover {
+  color: #be126d;
+}
+
+/* Make sure there's a uniform color for the bottom part of the footer */
+.min-h-0.py-5.px-1.mb-11.lg\:mb-0.bg-pink-200 {
+  background-color: #FFD0E8 !important;
+}
