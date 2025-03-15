@@ -38,6 +38,7 @@
   },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.19",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10"
