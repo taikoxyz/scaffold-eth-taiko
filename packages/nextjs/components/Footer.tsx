@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { hardhat } from "viem/chains";
+import { TaikoLogo } from "./assets/TaikoLogo";
 import { CurrencyDollarIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { BuidlGuidlLogo } from "~~/components/assets/BuidlGuidlLogo";
@@ -8,15 +9,6 @@ import { Faucet } from "~~/components/scaffold-eth";
 import { useTargetNetwork } from "~~/hooks/scaffold-eth/useTargetNetwork";
 import { useGlobalState } from "~~/services/store/store";
 
-// Simple Taiko Logo component
-const TaikoLogo = ({ className }: { className?: string }) => (
-  <svg width="16" height="16" viewBox="0 0 246 246" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-    <path
-      d="M123 0C55.08 0 0 55.08 0 123C0 190.92 55.08 246 123 246C190.92 246 246 190.92 246 123C246 55.08 190.92 0 123 0ZM121.35 175.54C101.8 175.54 85.95 159.69 85.95 140.15C85.95 120.6 101.8 104.75 121.35 104.75C140.89 104.75 156.74 120.6 156.74 140.15C156.74 159.69 140.89 175.54 121.35 175.54Z"
-      fill="currentColor"
-    />
-  </svg>
-);
 
 /**
  * Site footer
