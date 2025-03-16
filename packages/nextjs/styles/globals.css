@@ -63,3 +63,97 @@ p {
 .min-h-0.py-5.px-1.mb-11.lg\:mb-0.bg-pink-200 {
   background-color: #FFD0E8 !important;
 }
+
+button[aria-label="Toggle theme"] {
+  box-shadow: 0 0 10px rgba(232, 24, 153, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+
+button[aria-label="Toggle theme"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(232, 24, 153, 0.8);
+}
+
+/* Ensure the toggle is above other elements */
+.fixed.bottom-4.right-4.z-50 {
+  z-index: 9999;
+}
+
+/* Theme detection and application */
+[data-theme="dark"] {
+  background-color: #0C101B !important;
+  color: white !important;
+}
+
+[data-theme="light"] {
+  background-color: #FFD0E8 !important;
+  color: #0C101B !important;
+}
+
+/* Make sure theme toggle is visible in both themes */
+[data-theme="dark"] button[aria-label="Toggle theme"] {
+  background-color: #5D07C8 !important;
+  border-color: #E81899 !important;
+}
+
+[data-theme="light"] button[aria-label="Toggle theme"] {
+  background-color: #E81899 !important;
+  border-color: #5D07C8 !important;
+}
+
+/* Add to global.css */
+[data-theme='dark'] {
+  --bg-gradient: linear-gradient(to bottom, #1A1A2E 0%, #30144F 100%);
+}
+
+[data-theme='light'] {
+  --bg-gradient: linear-gradient(to bottom, #FFD0E8 0%, #E81899 100%);
+}
+
+.bg-taiko-gradient {
+  background: var(--bg-gradient);
+}
+
+/* Theme transition */
+html {
+  transition: background-color 0.3s ease;
+}
+
+/* Ensure theme toggle is above other elements */
+.fixed.bottom-4.right-4.z-50 {
+  z-index: 9999 !important;
+}
+
+.fixed.bottom-20.right-5.z-50 button {
+  transform-origin: center;
+  position: relative;
+}
+
+.fixed.bottom-20.right-5.z-50 button::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 999px;
+  background: linear-gradient(45deg, #E81899, #5D07C8);
+  z-index: -1;
+  opacity: 0.5;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}

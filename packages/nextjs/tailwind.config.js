@@ -36,12 +36,12 @@ module.exports = {
                     "secondary-content": "#FFFFFF",
                     accent: "#0C101B",            // Deep Gray
                     "accent-content": "#FFFFFF",
-                    neutral: "#FFFFFF",
-                    "neutral-content": "#0C101B",
-                    "base-100": "#FFFFFF",
-                    "base-200": "#FFD0E8",        // Light Pink
-                    "base-300": "#E81899",        // Taiko Pink
-                    "base-content": "#0C101B",
+                    neutral: "#1A1A2E",           // Dark background
+                    "neutral-content": "#FFFFFF",
+                    "base-100": "#0F0F1A",        // Very dark background
+                    "base-200": "#1A1A2E",        // Dark purple-blue
+                    "base-300": "#30144F",        // Dark Taiko Purple
+                    "base-content": "#FFFFFF",    // White text
                     info: "#5D07C8",              // Purple
                     success: "#6ECFB0",           // Mint Green
                     warning: "#FCE2A0",           // Light Yellow
